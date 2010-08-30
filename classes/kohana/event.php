@@ -46,7 +46,7 @@ abstract class Kohana_Event {
 			// Create an empty event for undefined events
 			Event::$_events[$name] = array();
 		}
-		elseif ($unqiue and in_array($callback, Event::$_events[$name], TRUE))
+		elseif ($unique and in_array($callback, Event::$_events[$name], TRUE))
 		{
 			// Event already exists
 			return FALSE;
